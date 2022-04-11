@@ -1,0 +1,17 @@
+#kahuna {
+    border: 5px solid rgb(136, 178, 201);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tunes {
+    border: 5px solid rgb(202, 175, 124);
+}
+
+.track {
+    background: antiquewhite;
+}
+
+.band {
+    background: rgb(95, 134, 158);
+}
