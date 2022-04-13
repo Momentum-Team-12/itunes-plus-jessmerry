@@ -8,15 +8,20 @@
   <title>Music Search</title>
 </head>
 <body>
-  <h1>Music Search</h1>
+  <h1>Find Your Groove</h1>
+  <div id="musicPreview">
+    <audio controls id="playMusic" src=""></audio>
+  </div>
   <div id="kahuna">
     <form action="/" id="search">
       <input type="text" name="userInput" id="user-input"
-      placeholder="search" required>
+      placeholder="Find Your Groove" required>
       <label for="userInput"></label>
-      <button type="submit">Search</button>
-      <button type="clear">Clear</button>
+      <button type="submit" id="searchButton">Search</button>
+      <button onClick="window.location.reload();" id="clearButton">Clear</button>
+      <!-- <button type="clear" id="clearButton">Clear</button> -->
     </form>
   </div>
+  <div id="musicDiv"></div>
 </body>
 </html>
