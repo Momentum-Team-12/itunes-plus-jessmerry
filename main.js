@@ -59,7 +59,6 @@ fetch(`https://itunes.apple.com/search?term=${userInput.value}&media=music`,{
 
         let audioDiv = document.createElement('a')
             audioDiv.classList.add('sound')
-            audioDiv.href = `${result.trackViewUrl}`
             audioDiv.innerText = "Play"
             audioDiv.addEventListener('click', (event) => {
                 event.preventDefault()
@@ -71,10 +70,4 @@ fetch(`https://itunes.apple.com/search?term=${userInput.value}&media=music`,{
         musicContainer.appendChild(musicCard)
         }
     })
-    .catch((err) => {
-        console.log(err)
-    })
 })
-
-//need it to clear
-//add song preview
